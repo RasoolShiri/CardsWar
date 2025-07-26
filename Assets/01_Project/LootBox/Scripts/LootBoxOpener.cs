@@ -1,30 +1,33 @@
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class LootBoxOpener : MonoBehaviour
 {
-    [SerializeField] private LootBoxRewardPresenter presenter;
+    [SerializeField] private LootBoxRewardPresenter rewardPresenter;
+    [SerializeField] private LootBoxOpenedEventChannelSO onLootBoxOpened;
 
-    public void OpenLootBox(LootBoxDataSO box)
+    public void OpenLootBox(LootBoxDataSO lootBoxData)
     {
-        List<LootBoxRewardSO> revealList = new List<LootBoxRewardSO>();
+        StartCoroutine(OpenAndRevealSequence(lootBoxData));
+    }
 
-        foreach (var rewardDef in box.Rewards)
+    private IEnumerator OpenAndRevealSequence(LootBoxDataSO lootBoxData)
+    {
+        // Animate chest rise (can add DOTween code here)
+        yield return new WaitForSeconds(1f);
+
+        foreach (LootRewardSO rewardSO in lootBoxData.Rewards)
         {
-            int amount = UnityEngine.Random.Range(rewardDef.minAmount, rewardDef.maxAmount + 1);
-            ILootRewardHandler handler = rewardDef.CreateHandler();
+            RewardRevealData revealData = rewardSO.GetRevealData();
+            rewardPresenter.PlayRevealAnimation(revealData);
 
-            var revealData = new LootBoxRewardSO
-            {
-                Handler = handler,
-                Icon = rewardDef.icon, // Add this to LootRewardDefinitionSO
-                DisplayName = rewardDef.name,
-                Amount = amount
-            };
+            yield return rewardPresenter.WaitForPlayerClick();
+            yield return rewardPresenter.FillBarAnimation(revealData);
 
-            revealList.Add(revealData);
+            rewardSO.Apply(PlayerInventory.Instance);
         }
 
-        presenter.StartReveal(revealList);
+        onLootBoxOpened.RaiseEvent(lootBoxData);
     }
 }

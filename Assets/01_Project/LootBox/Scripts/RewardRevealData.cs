@@ -2,16 +2,23 @@ using UnityEngine;
 
 public class RewardRevealData
 {
-    public ILootRewardHandler Handler { get; }
-    public int Amount { get; }
-    public Sprite Icon { get; }
-    public string LocalizedName { get; }
-
-    public RewardRevealData(LootBoxRewardSO so, int amount, ILootRewardHandler handler)
+    public Sprite Icon;
+    public string Name;
+    public float PreviousProgress;
+    public float NewProgress;
+    public ILootRewardHandler Handler;
+    public int Amount;
+    
+    // Parameterless constructor for object initializer
+    public RewardRevealData() { }
+    
+    public RewardRevealData(Sprite icon, string name, float prevProgress, float newProgress, ILootRewardHandler handler, int amount)
     {
+        Icon = icon;
+        Name = name;
+        PreviousProgress = prevProgress;
+        NewProgress = newProgress;
         Handler = handler;
         Amount = amount;
-        Icon = so.Icon;
-        LocalizedName = so.localizedKey;
     }
 }

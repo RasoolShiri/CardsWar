@@ -1,42 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class LootBoxRewardPresenter : MonoBehaviour
 {
-    [SerializeField] private Transform rewardParent;
-    [SerializeField] private GameObject rewardPrefab;
+    [SerializeField] private RewardView rewardView;
 
-    private Queue<LootBoxRewardSO> queue = new();
-
-    public void StartReveal(List<LootBoxRewardSO> rewards)
+    public void PlayRevealAnimation(RewardRevealData data)
     {
-        queue.Clear();
-        foreach (var r in rewards)
-            queue.Enqueue(r);
-
-        StartCoroutine(RevealSequence());
+        rewardView.Setup(data);
+        rewardView.ShowWithAnimation();
     }
 
-    private IEnumerator RevealSequence()
+    public IEnumerator WaitForPlayerClick()
     {
-        while (queue.Count > 0)
-        {
-            var reward = queue.Dequeue();
+        yield return rewardView.WaitForClick();
+    }
 
-            GameObject go = Instantiate(rewardPrefab, rewardParent);
-            var view = go.GetComponent<RewardView>();
-            view.Setup(reward);
-
-            yield return view.PlayRevealAnimation(reward.Amount);
-
-            // 🖱️ Wait for tap/click before next
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-
-            reward.Handler.GrantReward(reward.Amount);
-        }
-
-        // Done!
-        Debug.Log("All rewards revealed.");
+    public IEnumerator FillBarAnimation(RewardRevealData data)
+    {
+        yield return rewardView.AnimateProgress(data);
     }
 }

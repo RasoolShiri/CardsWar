@@ -1,49 +1,52 @@
-using System.Collections;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Collections;
 
 public class RewardView : MonoBehaviour
 {
     [SerializeField] private Image icon;
-    [SerializeField] private TextMeshProUGUI label;
-    [SerializeField] private Slider fillBar;
-    [SerializeField] private TextMeshProUGUI amountText;
+    [SerializeField] private TextMeshProUGUI title;
+    [SerializeField] private Slider progressBar;
 
-    public void Setup(LootBoxRewardSO so)
+    private bool clicked;
+
+    public void Setup(RewardRevealData data)
     {
-        icon.sprite = so.Icon;
-        label.text = so.DisplayName;
-        amountText.text = $"x{so.Amount}";
-        fillBar.value = 0;
-//        StartCoroutine(PlayReveal());
+        icon.sprite = data.Icon;
+        title.text = data.Name;
+        progressBar.value = data.PreviousProgress;
     }
 
-    public IEnumerator PlayRevealAnimation(int targetAmount)
+    public void ShowWithAnimation()
+    {
+        gameObject.SetActive(true);
+        clicked = false;
+    }
+
+    public IEnumerator WaitForClick()
+    {
+        while (!clicked)
+        {
+            if (Input.GetMouseButtonDown(0)) clicked = true;
+            yield return null;
+        }
+    }
+
+    public IEnumerator AnimateProgress(RewardRevealData data)
     {
         float duration = 0.5f;
-        float timer = 0;
-        while (timer < duration)
+        float elapsed = 0f;
+        float start = data.PreviousProgress;
+        float end = data.NewProgress;
+
+        while (elapsed < duration)
         {
-            timer += Time.deltaTime;
-            float progress = Mathf.Clamp01(timer / duration);
-            fillBar.value = progress;
+            progressBar.value = Mathf.Lerp(start, end, elapsed / duration);
+            elapsed += Time.deltaTime;
             yield return null;
         }
 
-        fillBar.value = 1;
-        
-        
-        
-        // private IEnumerator PlayReveal()
-        // {
-        //     // Use DOTween or FEEL
-        //     yield return transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
-        //
-        //     yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        //
-        //     data.Handler.GrantReward(data.Amount);
-        //     data.IsClaimed = true;
-        // }
+        progressBar.value = end;
     }
 }
