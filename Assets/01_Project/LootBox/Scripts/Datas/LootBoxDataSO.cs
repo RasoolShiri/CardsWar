@@ -4,5 +4,5 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Loot/Loot Box")]
 public class LootBoxDataSO : ScriptableObject
 {
-    public List<LootRewardSO> Rewards;
+    public List<RewardSO> Rewards;
 }

@@ -7,18 +7,18 @@ public class RewardRevealer : MonoBehaviour
     [SerializeField] private RewardRevealedEventChannelSO rewardRevealedEvent;
     [SerializeField] private RewardClaimedEventChannelSO rewardClaimedEvent;
 
-    public void RevealRewards(List<LootRewardSO> rewards)
-    {
-        StartCoroutine(RevealRoutine(rewards));
-    }
+    // public void RevealRewards(List<RewardSO> rewards)
+    // {
+    //     StartCoroutine(RevealRoutine(rewards));
+    // }
 
-    private IEnumerator RevealRoutine(List<LootRewardSO> rewards)
-    {
-        foreach (var reward in rewards)
-        {
-            rewardRevealedEvent.RaiseEvent(reward.GetRevealData());
-            yield return new WaitUntil(() => reward.IsClaimed);
-            rewardClaimedEvent.RaiseEvent(reward);
-        }
-    }
+    // private IEnumerator RevealRoutine(List<RewardSO> rewards)
+    // {
+    //     foreach (var reward in rewards)
+    //     {
+    //         rewardRevealedEvent.RaiseEvent(reward.CreateRevealData());
+    //         yield return new WaitUntil(() => reward.IsClaimed);
+    //         rewardClaimedEvent.RaiseEvent(reward);
+    //     }
+    // }
 }

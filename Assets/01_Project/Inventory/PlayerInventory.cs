@@ -49,4 +49,9 @@ public class PlayerInventory : MonoBehaviour
 
         return cards[card];
     }
+
+    public void AddCoins(int amount)
+    {
+        throw new System.NotImplementedException();
+    }
 }

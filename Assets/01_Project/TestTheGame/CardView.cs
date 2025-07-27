@@ -16,7 +16,7 @@ public class CardView : MonoBehaviour
         cardData = data;
         count = amount;
         icon.sprite = data.Icon;
-        nameText.text = data.DisplayName;
+        nameText.text = data.CardName;
         countText.text = $"x{amount}";
     }
 }

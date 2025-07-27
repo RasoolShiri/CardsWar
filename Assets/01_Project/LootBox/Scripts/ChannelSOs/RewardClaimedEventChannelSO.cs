@@ -4,9 +4,9 @@ using UnityEngine.Events;
 [CreateAssetMenu(menuName = "Events/LootBox/Reward Claimed")]
 public class RewardClaimedEventChannelSO : ScriptableObject
 {
-    public UnityAction<LootRewardSO> OnRewardClaimed;
+    public UnityAction<RewardSO> OnRewardClaimed;
 
-    public void RaiseEvent(LootRewardSO rewardSo)
+    public void RaiseEvent(RewardSO rewardSo)
     {
         OnRewardClaimed?.Invoke(rewardSo);
     }

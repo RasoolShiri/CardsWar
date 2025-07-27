@@ -1,10 +1,11 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [CreateAssetMenu(menuName = "Cards/Card Data")]
 public class CardDataSO : ScriptableObject
 {
     public CardType Type;
-    public string DisplayName;
+    public string CardName;
     public Sprite Icon;
     public int BaseHealth;
     public int BaseAttack;
