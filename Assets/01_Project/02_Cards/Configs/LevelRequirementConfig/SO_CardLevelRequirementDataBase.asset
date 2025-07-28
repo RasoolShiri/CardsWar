@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ebb9ccc4d18448fa17168a812431b78, type: 3}
+  m_Name: SO_CardLevelRequirementDataBase
+  m_EditorClassIdentifier: 
+  RarityConfigs:
+  - {fileID: 11400000, guid: 322da36654e737c499f92383582c63d0, type: 2}
+  - {fileID: 11400000, guid: 750b0088b65b36c4d807b316eb993431, type: 2}
+  - {fileID: 11400000, guid: a3a6211032fefba429b80f5c711bbdbf, type: 2}
+  - {fileID: 11400000, guid: 45386b73e386e7344b6c52224bd8f4ae, type: 2}

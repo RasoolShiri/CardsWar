@@ -1,0 +1,522 @@
+fileFormatVersion: 2
+guid: 81760bfe8d55f7e458e3b228c10844bf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: _Archers
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 623
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d799f03707764cd429efda88cb5e9ace
+      internalID: 211132391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Arrows
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 623
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877343057a13d364999601f1ef3bddac
+      internalID: -367961252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Bomber
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 623
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967b43005949e684c9a56c0816282cef
+      internalID: -997294771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Cannon
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 520
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ed77afa50cafc4ea0494a9649bc194
+      internalID: 192627067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Fireball
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 520
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411d91aacb4b4a3488542d66f3230a32
+      internalID: -154685265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Giant
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 417
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49e31771ea25d048a3fb42b217c7b1b
+      internalID: 428837557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _GoblinCages
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 417
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119cc6b1d2551ae45bfa0991e3ae0c39
+      internalID: 163020287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Goblins
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 417
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029b33116c9dd1146a33db934a22ff97
+      internalID: -1078780340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Knight
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 314
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be77e690cb0b1db459a14884338dc107
+      internalID: -1033581815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Minions
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 211
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c57ada214f5e540be8b68037334bde
+      internalID: 626690794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _MiniPeka
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 211
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfe96612a9a00d499f8d824da9634fc
+      internalID: -1565722017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Skeletons
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 108
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcaabd4629b2e0469562df5538df85d
+      internalID: 1731203680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _TombStone
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057d75a1f1643d1439a084ab2c007e88
+      internalID: -1207453614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: _Valkyrie
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 3
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ddc8829ff9cb145ab6f14c8c0dc43a
+      internalID: -71465718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: de90cab3ec450d549a089912dc4e2f0b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      _Archers: 211132391
+      _Arrows: -367961252
+      _Bomber: -997294771
+      _Cannon: 192627067
+      _Fireball: -154685265
+      _Giant: 428837557
+      _GoblinCages: 163020287
+      _Goblins: -1078780340
+      _Knight: -1033581815
+      _MiniPeka: -1565722017
+      _Minions: 626690794
+      _Skeletons: 1731203680
+      _TombStone: -1207453614
+      _Valkyrie: -71465718
+      cards_10: 1966214209
+      cards_11: -244266420
+      cards_13: -1864282560
+      cards_14: -1702616301
+      cards_15: 1725699421
+      cards_16: -1303578209
+      cards_17: 1753570979
+      cards_18: 1384788995
+      cards_19: 750404316
+      cards_2: 1702901652
+      cards_20: -1029468431
+      cards_22: 829464900
+      cards_23: 1888278741
+      cards_24: -532709557
+      cards_25: -767822253
+      cards_27: 514866
+      cards_29: 1998135431
+      cards_3: 1422241925
+      cards_30: -1234608719
+      cards_32: 340808903
+      cards_33: -957289468
+      cards_34: 1121112040
+      cards_35: -1735925169
+      cards_36: -1786736234
+      cards_37: 2085155574
+      cards_38: -967153701
+      cards_39: 1944921888
+      cards_4: 344487928
+      cards_40: -1968442268
+      cards_41: 413496986
+      cards_43: 1463381212
+      cards_44: -735852940
+      cards_45: 226366435
+      cards_46: 361682631
+      cards_47: -994417903
+      cards_48: -197965678
+      cards_49: 1098641179
+      cards_5: -1352504888
+      cards_52: -467048864
+      cards_53: -1560938383
+      cards_54: 621466418
+      cards_55: 1024463742
+      cards_56: -619625398
+      cards_57: 941041363
+      cards_58: -85318853
+      cards_59: -143003903
+      cards_6: -1280282768
+      cards_60: 1743752751
+      cards_61: 356166234
+      cards_62: -703924200
+      cards_64: 1829573968
+      cards_65: -203715171
+      cards_66: -1327096279
+      cards_67: 116289777
+      cards_68: -1172965345
+      cards_69: 2111051845
+      cards_7: 900490953
+      cards_70: 944707623
+      cards_71: 523821635
+      cards_72: -1727633639
+      cards_73: 1466970405
+      cards_74: 1087946134
+      cards_77: 1633016208
+      cards_78: 1434385879
+      cards_79: -776154031
+      cards_8: 1051953014
+      cards_80: -450274488
+      cards_81: -375467558
+      cards_82: 1661061581
+      cards_83: 1872705295
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce97296ddb09408ea6e421bdf6f8e65d, type: 3}
+  m_Name: SO_CardData_Archers
+  m_EditorClassIdentifier: 
+  CardName: Archers
+  Icon: {fileID: 211132391, guid: 81760bfe8d55f7e458e3b228c10844bf, type: 3}
+  Rarity: 0
+  LevelRequirementDatabase: {fileID: 11400000, guid: 0ccda253d53b3e542b9316925f7340aa, type: 2}

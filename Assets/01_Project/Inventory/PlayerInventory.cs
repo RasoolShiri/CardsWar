@@ -1,9 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-using System.Collections.Generic;
-using UnityEngine;
-
 public class PlayerInventory : MonoBehaviour
 {
     public static PlayerInventory Instance;
